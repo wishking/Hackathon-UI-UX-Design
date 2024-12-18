@@ -14,10 +14,10 @@ export default function Navbar() {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-8 text-black font-medium">
-          <a href="#" className="hover:text-gray-600">Home</a>
-          <a href="#" className="hover:text-gray-600">Shop</a>
-          <a href="#" className="hover:text-gray-600">About</a>
-          <a href="#" className="hover:text-gray-600">Contact</a>
+          <a href="./" className="hover:text-gray-600">Home</a>
+          <a href="/shop" className="hover:text-gray-600">Shop</a>
+          <a href="/about" className="hover:text-gray-600">About</a>
+          <a href="/contact" className="hover:text-gray-600">Contact</a>
         </div>
 
         {/* Icons */}
