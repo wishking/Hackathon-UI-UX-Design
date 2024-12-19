@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function Hero() {
+export default function Asgaard() {
   return (
     <section className="relative bg-[#FFFAE9] w-full min-h-[70vh] flex flex-col-reverse md:flex-row items-center justify-between px-4 md:px-12 lg:px-20">
       {/* Left Section: Sofa Image */}

@@ -1,9 +1,10 @@
-import AsgaardSofa from "@/components/Asgard";
+import Asgaard from "@/components/Asgard";
 import { BlogSection } from "@/components/blogsection/BlogPosts";
-import Footertop from "@/components/footertop";
+import Footertop from "@/components/FooterComponent";
 import Hero from "@/components/Hero";
 import SideTableSection from "@/components/tables/tables";
 import TopPicks from "@/components/Toppics";
+
 
 
 export default function Home() {
@@ -12,7 +13,7 @@ export default function Home() {
     <Hero />
     <SideTableSection />
     <TopPicks />
-    <AsgaardSofa />
+    <Asgaard />
     <BlogSection />
     <Footertop />
    </div>
