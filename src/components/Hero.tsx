@@ -1,8 +1,13 @@
 import Image from "next/image";
+import Navbar from "./Navbar";
 
 export default function Hero() {
   return (
+    <div>
+        <Navbar />
+     
     <div className="flex flex-col-reverse md:flex-row items-center justify-center min-h-screen bg-[#FFF4C3] px-6 md:px-20">
+      
       {/* Left Section: Text */}
       <div className="text-center md:text-left md:w-1/2 lg:pl-16 mb-10 md:mb-0">
         <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-black leading-snug">
@@ -29,6 +34,7 @@ export default function Hero() {
           priority
         />
       </div>
+    </div>
     </div>
   );
 }

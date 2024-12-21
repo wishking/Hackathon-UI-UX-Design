@@ -3,6 +3,7 @@ import React from "react";
 import { FaFacebookF } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { AiFillTwitterCircle } from "react-icons/ai";
+import RelatedProduct from "./RelatedProduct";
 
 const ProductPage: React.FC = () => {
   return (
@@ -47,7 +48,7 @@ const ProductPage: React.FC = () => {
             alt="Product"
             width={700}
             height={600}
-            className="w-full max-w-lg rounded-lg shadow-lg"
+            className="w-full max-w-lg rounded-lg shadow-lg object-contain"
           />
         </div>
 
@@ -128,8 +129,62 @@ const ProductPage: React.FC = () => {
         </div>
       </div>
 
-      <div>
-        Reviews
+      <div className="mt-20">
+        <div className="min-h-screen bg-gray-50">
+          {/* Header */}
+          <div className="text-center py-4 bg-white shadow-sm">
+            <div className="flex justify-center space-x-6">
+              <button className="text-lg font-semibold focus:outline-none">Description</button>
+              <button className="text-lg font-semibold text-gray-400 focus:outline-none">
+                Additional Information
+              </button>
+              <button className="text-lg font-semibold text-gray-400 focus:outline-none">Reviews [5]</button>
+            </div>
+          </div>
+
+          {/* Content Section */}
+          <div className="max-w-4xl mx-auto p-6">
+            {/* Text Section */}
+            <div className="mb-8 text-gray-700">
+              <p className="mb-4 text-lg">
+                Embodying the raw, wayward spirit of rock &apos;n&apos; roll, the Kilburn portable active stereo speaker takes
+                the unmistakable look and sound of Marshall, unplugs the chords, and takes the show on the road.
+              </p>
+              <p className="text-lg">
+                Weighing in under 7 pounds, the Kilburn is a lightweight piece of vintage styled engineering. Setting
+                the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with
+                a well-balanced audio which boasts a clear midrange and extended highs for a sound that is both
+                articulate and pronounced. The analogue knobs allow you to fine tune the controls to your personal
+                preferences while the guitar-influenced leather strap enables easy and stylish travel.
+              </p>
+            </div>
+
+            {/* Image Section */}
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+              <div className="p-4 bg-yellow-50 rounded-lg shadow">
+                <Image
+                  src="/sofa-1.png"
+                  alt="Sofa 1"
+                  width={700}
+                  height={600}
+                  className="w-full h-auto object-cover rounded-lg"
+                />
+              </div>
+              <div className="p-4 bg-yellow-50 rounded-lg shadow">
+                <Image
+                  src="/sofa-2.png"
+                  alt="Sofa 2"
+                  width={700}
+                  height={600}
+                  className="w-full h-auto object-cover rounded-lg"
+                />
+              </div>
+            </div>
+          </div>
+          <div>
+            <RelatedProduct />
+          </div>
+        </div>
       </div>
     </section>
   );
