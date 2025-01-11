@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const Total: React.FC = () => {
@@ -18,9 +19,11 @@ const Total: React.FC = () => {
             <tbody>
               <tr className="bg-white rounded-lg shadow-md">
                 <td className="flex items-center py-4 px-4">
-                  <img
+                  <Image
                     src="/asgaard-sofa.png"
                     alt="Asgaard Sofa"
+                    width={100}
+                    height={100}
                     className="w-16 h-16 rounded-md bg-yellow-100"
                   />
                   <span className="ml-4 text-gray-600 text-sm">Asgaard sofa</span>
